@@ -2,10 +2,10 @@ import os
 import random
 
 from google.adk.agents import Agent
-from google.adk.models.gemini import GeminiModel
+from google.adk.models import Gemini
 
-model = GeminiModel(
-    model="gemini-2.5-flash",
+model = Gemini(
+    model="gemini-1.5-flash",
     api_key=os.getenv("GOOGLE_API_KEY"),
 )
 
